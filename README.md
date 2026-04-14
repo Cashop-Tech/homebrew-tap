@@ -1,4 +1,4 @@
-# Cashop-Tech Homebrew Tap                                                                                                                                                                                                
+  # Cashop-Tech Homebrew Tap                                                                                                                                                                                                
                                                                                          
   Official Homebrew tap for Cashop-Tech tooling.                                                                                                                                                                            
                                                                                          
@@ -26,4 +26,6 @@
   - npm package: https://www.npmjs.com/package/cashop-cli                                                                                                                                                                   
   - Docs: https://cli.cashop.com (coming soon)                                           
                                          
-  License    
+  License                  
+                      
+  MIT   
