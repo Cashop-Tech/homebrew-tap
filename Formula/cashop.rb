@@ -9,8 +9,14 @@ class Cashop < Formula
   depends_on "node"
 
   def install
-    system "npm", "install", *std_npm_args(prefix: false)
-    bin.install_symlink Dir["#{libexec}/bin/*"]
+    libexec.install Dir["*"]
+    cd libexec do
+      system "npm", "install", "--omit=dev", "--no-audit", "--no-fund", "--loglevel=error"
+    end
+    (bin/"cashop").write <<~SH
+      #!/bin/bash
+      exec "#{Formula["node"].opt_bin}/node" "#{libexec}/dist/entry.js" "$@"
+    SH
   end
 
   test do
