@@ -1,10 +1,10 @@
 class Cashop < Formula
   desc "Official command-line interface for the Cashop platform"
   homepage "https://github.com/Cashop-Tech/cashop-cli"
-  url "https://github.com/Cashop-Tech/cashop-cli/releases/download/v0.1.3/cashop-cli-0.1.3.tar.gz"
-  sha256 "1c31ff5b72c63ab5297862b970b5579d9c66fdf7044e238bdb22b418beae8213"
+  url "https://github.com/Cashop-Tech/cashop-cli/releases/download/v0.1.4/cashop-cli-0.1.4.tar.gz"
+  sha256 "6248e9924b95b232cf0f89efd9b7750156c2a25820e0bb400a59b5e89ef05897"
   license "UNLICENSED"
-  version "0.1.3"
+  version "0.1.4"
 
   depends_on "node"
 
